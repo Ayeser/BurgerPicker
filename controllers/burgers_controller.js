@@ -15,27 +15,29 @@ router.get("/", function(req, res) {
   });
   
   router.post("/api/burgers", function(req, res) {
-    burger.insertOne(["burger_name"], [req.body.name], function(result) {
+      console.log("The post is firing");
+    burger.create(["burger_name"], [req.body.name], function(result) {
+      console.log("This is what happens");
       res.json({ id: result.insertId });
     });
   });
   
   router.put("/api/burgers/:id", function(req, res) {
-    const devoured = "id = " + req.params.id;
+    const condition = "id = " + req.params.id;
   
-    console.log("devoured", devoured);
+    console.log("devoured", condition);
   
     burger.updateOne(
       {
         devoured: req.body.devoured
       },
-      devoured,
+      condition,
       function(result) {
-        if (result.changedRows === 0) {
+        if (result.changedRows == 0) {
           return res.status(404).end();
-        }
+        } else {
         res.status(200).end();
-  
+        }
       }
     );
   });

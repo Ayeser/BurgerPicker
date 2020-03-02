@@ -1,7 +1,8 @@
 $(function() {
-    $(".change-eaten").on("click", function(event) {
+    $(".change-devoured").on("click", function(event) {
       const id = $(this).data("id");
       const newEaten = $(this).data("neweaten");
+      console.log("This button works");
   
       const newEatenState = {
         devoured: newEaten
@@ -12,7 +13,7 @@ $(function() {
         data: newEatenState
       }).then(
         function() {
-          console.log("changed devoured to", newEatenState);
+          console.log("changed devoured to", newEaten);
           location.reload();
         }
       );
@@ -23,7 +24,6 @@ $(function() {
   
       const newBurger = {
         burger_name: $("#ca").val().trim(),
-        devoured: $("[name=devoured]:checked").val().trim()
       };
   
       // Send the POST request.
