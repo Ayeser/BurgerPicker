@@ -4,6 +4,10 @@ li {
   background: #faebd7;
 }
 
+body {
+  background: #f5ca14;
+}
+
 .label {
   font-weight: bold;
 }
@@ -16,4 +20,8 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+.faded {
+  opacity: .5;
 }

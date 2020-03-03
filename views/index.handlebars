@@ -1,5 +1,18 @@
-<h1>Eat the burgers!</h1>
+<div class="row mx-auto">
+<h1 class="mx-auto">Eat the burgers!</h1>
+</div>
 
+<div class="row juicy">
+<div class="col-sm-3"></div>
+<div class="col-sm-6">
+<img src="/assets/img/Burger.jpg" class="rounded img-fluid" alt="Burger Picture">
+</div>
+<div class="col-sm-3"></div>
+</div>
+
+<div class="row">
+<div class="col-sm-1"></div>
+<div class="col-sm-4">
 <h2>Burgers that are not eaten!</h2>
 
 <ul>
@@ -9,7 +22,9 @@
     {{/unless}}
   {{/each}}
 </ul>
-
+</div>
+<div class="col-sm-2"></div>
+<div class="col-sm-4 faded">
 <h2>Burgers that are eaten!</h2>
 
 <ul>
@@ -19,7 +34,10 @@
     {{/if}}
   {{/each}}
 </ul>
+</div>
+<div class="col-sm-1"></div></div>
 
+<div class="jumbotron">
 <h2>Add a Burger</h2>
 <form class="create-form">
 
@@ -36,3 +54,4 @@
 
   <button type="submit">Add Burger</button>
 </form>
+</div>
