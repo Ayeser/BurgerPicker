@@ -8,4 +8,4 @@ This site is a simple, one-page design. The top of the page shows a list of the 
 
 On the bottom of the site the user can input new burgers. This data persists and is maintained by a MySQL database. The deployed site is hosted through Heroku, and the dynamically created content is handled via Handlebars.
 
-This is a simple site showcasing the use of technologies including: MySQL, Node, Express, Handlebars, and a homemade ORM.
+This is a simple site showcasing the use of technologies including: MySQL, Node, Express, Handlebars, and a homemade ORM using AJAX calls.
