@@ -1,7 +1,7 @@
 {
-  "name": "mvc_design",
+  "name": "Burger Picker",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a website showcasing use of handlebars, node, express, heroku, and more.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
